@@ -1,0 +1,52 @@
+.grid {
+    display: grid;
+    grid-template-areas:
+        'S1 S3 S5 S5'
+        'S1 S4 S6 S7'
+        'S2 S4 S8 S8';
+    background-color: #2196F3;
+    gap: 1px;
+}
+.S1 {
+    grid-area: S1;
+}
+.S2 {
+    grid-area: S2;
+}
+.S3 {
+    grid-area: S3;
+}
+.S4 {
+    grid-area: S4;
+}
+.S5 {
+    grid-area: S5;
+}
+.S6 {
+    grid-area: S6;
+}
+.S7 {
+    grid-area: S7;
+}
+.S8 {
+    grid-area: S8;
+}
+body {
+    width: 100%;
+    height: 100%;
+}
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 6px;
+}
+.flex-item {
+    display: flex;
+    /* justify-content: space-between; */
+    margin: 4px 0;
+}
