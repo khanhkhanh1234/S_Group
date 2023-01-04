@@ -1,0 +1,2 @@
+Khác biệt let và var
+hoisting
