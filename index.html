@@ -5,52 +5,253 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Product Presentation - Foton</title>
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-  </head>
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+  <link rel="shortcut icon" href="image/cropped-favicon-192x192.png" type="image/x-icon">
+</head>
 
 <body>
   <div class="header">
-    <div class="ul">
-      <ul>
-        <div class="foton">
-       <img src="./image/logo2.png"> </div>
-        <li><i class="fa-solid fa-bars"></i></li>
-        <li>
-          <i class="fa-solid fa-magnifying-glass"></i>
-        </li>
-        <li><i class="fa-solid fa-cart-shopping"></i></li>
-        <li><a>ELEMENTS</a></li>
-        <li><a>SHOP</a></li>
-        <li><a>BLOG</a></li>
-        <li><a>PORTFOLIO</a></li>
-        <li><a class=>PAGES</a></li>
-        <li><a class="active">HOME</a></li>
-
-
-      </ul>
+    <div class="header__nav">
+      <div class="header__nav--brand">
+        <img src="image/logo2.png" alt="Brand Icon">
+      </div>
+      <div class="header__nav--links">
+        <ul id="nav">
+          <li>
+            <a href="#" class="active">HOME</a>
+          </li>
+          <li>
+            <a href="#">PAGES</a></li>
+          <li>
+            <a href="#">PORTFOLIO</a></li>
+          <li>
+            <a href="#">BLOG</a></li>
+          <li>
+            <a href="#">SHOP</a></li>
+          <li>
+            <a href="#">ELEMENTS</a></li>
+          <li>
+            <i class="fa-solid fa-cart-shopping"></i>
+            <a href="#"></a>
+          </li>
+          <li>
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </li>
+          <li>
+            <i class="fa-solid fa-bars"></i>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="header__info">
+      <div class="header__info--desc">
+        <p>Pushing The Boundaries & Setting New Standards</p>
+      </div>
+      <div class="header__info--para">
+        <p>Lorem ipsum dolor sit amet, consectetuer adi iscing elit, diam nonummy nibhie.</p>
+      </div>
+      <div class="header__info--buttons">
+        <button class="btn btn--more">Read More</button>
+        <button class="btn btn--contact">Contact Us</button>
+      </div>
+      <img class="header__info--headphone" src="./image/Presentation-rev-img-2.png" alt="presentation-headphone-icon">
     </div>
   </div>
-  <div class="secondheader">
-    <div class="h1">
-      <h1>Pushing The Boundaries & Setting New Standards</h1>
+  <div class="section">
+    <div class="section__quote">
+      <img class="section__quote--heart__beat" src="./image/download.gif">
+      <p class="section__quote--para">Music that inspires you when you're on the move</p>
     </div>
-    <div class="para">
-      <p>Lorem ipsum dolor sit amet, consectetuer adi iscing elit, diam nonummy nibhie.</p>
+    <div class="section__detail">
+      <div class="section__detail--left">
+        <h3>Get In The Zone With Your Favorite Music</h3>
+      </div>
+      <div class="section__detail--right">
+        <p>Proin non urna nec neque ultrices porttitor. Aenean laoreet massa eu leo hendrerit mollis. Praesent ferme ntum congue mollis. Nunc non viverra ura sed accum.</p>
+      </div>
     </div>
-    <div class="button">
-      <button class="b1" >Read More</button>
-      <button class="b2" >Contact Us</button>
+    <div class="section__products">
+      <div class="section__products--introduce">
+        <img src="image/saas-earphones-4.png" alt="Earphone 4">
+        <img src="image/saas-earphones-5.png" alt="Earphone 4">
+        <img src="image/saas-earphones-6.png" alt="Earphone 4">
+      </div>
     </div>
-    <img class="img" src="./image/Presentation-rev-img-2.png" alt="">
   </div>
-  <div class="thirdheader">
-    <img class="gif" src="./image/download.gif"> 
-    <p class="besidegif">Music that inspires you when you're on the move</p>
+  <div class="content">
+    <div class="content__features">
+      <div class="content__features--container">
+        <div class="content__features--container__advices">
+          <img src="image/icon-img-1.png" alt="Icon Advices" class="features-icons">
+          <div class="features__advices--desc features-icons">
+            <h3>Great Advices</h3>
+            <p>Eam animal cons incorupte, deserun et princip deos de.</p>
+          </div>
+        </div>
+        <div class="content__features--container__support">
+          <img src="image/icon-img-2.png" alt="Icon Support" class="features-icons">
+          <div class="features__support--desc features-icons">
+            <h3>24/7 Support</h3>
+            <p>Eam animal cons incorupte, deserun et princip deos de.</p>
+          </div>
+        </div>
+        <div class="content__features--container__choice">
+          <img src="image/icon-img-3.png" alt="Icon Choice" class="features-icons">
+          <div class="features__choice--desc features-icons">
+            <h3>Optimal Choice</h3>
+            <p>Eam animal cons incorupte, deserun et princip deos de.</p>
+          </div>
+        </div>
+        <div class="content__features--container__analysis">
+          <img src="image/icon-img-4.png" alt="Icon Analysis" class="features-icons">
+          <div class="features__analysis--desc features-icons">
+            <h3>Market Analysis</h3>
+            <p>Eam animal cons incorupte, deserun et princip deos de.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="content__video">
+      <div class="content__video--play">
+        <video controls width="1100px" height="634px" src="https://vimeo.com/190660027?_ga=2.183639078.1215798518.1673578338-642383717.1673578338"></video>
+      </div>
+    </div>
+    <div class="content__overview">
+      <div class="content__overview--container">
+        <div class="overview__image--product">
+          <img src="image/home-product-img-2.jpg" alt="Home Product Overview">
+        </div>
+        <div class="overview__desc">
+          <h3>Developing Wired & Wireless Tech</h3>
+          <p>Vero homero perfecto mei ut, sonet aperiam an nec. Ni nec dicta alter legim us. Me vita legendos ex pet en dis ad. Ex mei omitta aliqu mi ando, ha beo tibque.</p>
+          <img src="image/Presentation-img-6.png" alt="Check icon" style="padding-top: 8px;">
+          <h4>Market Analysis</h4>
+          <p>Amcorper uisque ac dolor nec nisl ptesue. Bulum sed ultrices mi morbi dim puru.</p>
+        </div>
+      </div>
+    </div>
+    <div class="content__achievements">
+      <div class="content__achievements--container">
+        <div class="achivements__left">
+          <div class="achievement__1">
+            <div class="achievement__image">
+              <img src="image/icon-img-4.png" alt="Icon Analys">
+            </div>
+            <div class="achievement__desc">
+              <h4>Clear Navigation</h4>
+              <p>Fusce maximus enim nulla, quis sollicitud iar estu.</p>
+            </div>
+          </div>
+          <div class="achievement__2">
+            <div class="achievement__image">
+              <img src="image/icon-img-3.png" alt="Icon Like">
+            </div>
+            <div class="achievement__desc">
+              <h4>Optimal Choice</h4>
+              <p>Fusce maximus enim nulla, quis sollicitud iar estu.</p>
+            </div>
+          </div>
+        </div>
+        <div class="achivements__middle">
+          <div class="achievement__3">
+            <div class="achievement__image">
+              <img src="image/icon-img-2.png" alt="Icon Headphone">
+            </div>
+            <div class="achievement__desc">
+              <h4>Awesome Support</h4>
+              <p>Fusce maximus enim nulla, quis sollicitud iar estu.</p>
+            </div>
+          </div>
+          <div class="achievement__4">
+            <div class="achievement__image">
+              <img src="image/icon-img-1.png" alt="Icon Message">
+            </div>
+            <div class="achievement__desc">
+              <h4>Financial Advices</h4>
+              <p>Fusce maximus enim nulla, quis sollicitud iar estu.</p>
+            </div>
+          </div>
+        </div>
+        <div class="achivements__right">
+          <div class="achievement__5">
+            <div class="achievement__image">
+              <img src="image/icon-img-4.png" alt="Icon Analys">
+            </div>
+            <div class="achievement__desc">
+              <h4>Market Analysis</h4>
+              <p>Fusce maximus enim nulla, quis sollicitud iar estu.</p>
+            </div>
+          </div>
+          <div class="achievement__6">
+            <div class="achievement__image">
+              <img src="image/icon-img-3.png" alt="Icon Like">
+            </div>
+            <div class="achievement__desc">
+              <h4>Innovative Ideas</h4>
+              <p>Fusce maximus enim nulla, quis sollicitud iar estu.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="footer__container">
+      <div class="footer__left">
+        <div class="footer__left--image">#
+          <a href="#">
+            <img src="image/logo2.png" alt="Logo">
+          </a>
+        </div>
+        <div class="footer__left--desc">
+          <p>Lorem ipsum dolor sit amet, consy ect etur adipisc de elit. Quisque act raqum nunc no dolor sit de amet.</p>
+        </div>
+        <div class="footer__left--contact">
+          <a href="#" style="color: #FFF;">
+            <i class="fa-brands fa-twitter" style="font-size: 40px; margin: 16px;"></i>
+          </a>
+          <a href="#" style="color: #FFF;">
+            <i class="fa-brands fa-facebook" style="font-size: 40px; margin: 16px;"></i>
+          </a>
+          <a href="#" style="color: #FFF;">
+            <i class="fa-brands fa-google" style="font-size: 40px; margin: 16px;"></i>
+          </a>
+        </div>
+      </div>
+      <div class="footer__middle">
+        <h4 style="color: #FFF;">Contact Info</h4>
+        <ul>
+          <li>
+            <i style="color: #FFF;" class="fa-solid fa-location-dot"></i>
+            <a href="#" class="footer__link">113 Fulton Street, Suite 721</a>
+          </li>
+          <li>
+            <i style="color: #FFF;" class="fa-solid fa-map-pin"></i>
+            <a href="#" class="footer__link">New York, NY 10010</a>
+          </li>
+          <li>
+            <i style="color: #FFF;" class="fa-solid fa-envelope"></i>
+            <a href="#" class="footer__link">foton@qodeinteractive.com</a>
+          </li>
+          <li>
+            <i style="color: #FFF;" class="fa-solid fa-phone"></i>
+            <a href="#" class="footer__link">+88 (0) 101 0000 000</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__right">
+        <p style="color: #FFF;">Support & Downloads</p>
+        <p style="color: #FFF;">Quisque actraqum nunc no dolor sit ametaugue dolor. Lorem ipsum dolor sit amet, consyect etur.</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer__copyright">
+    <p style="color: #FFF; line-height: 80px;">© 2023 Qode Interactive, All Rights Reserved</p>
   </div>
 </body>
 
