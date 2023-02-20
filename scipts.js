@@ -35,7 +35,7 @@ function displayFlashcards() {
       <div id="flashcard${i}" class="flashcard-wrapper">
         <h3>${flashcards[i].question}</h3>
         <a href="#" class="showhide">Show/Hide Answer</a>
-        <h4 class="${flashcards[i].hide}">${flashcards[i].answer}</h4>
+        <h4 id= "${i}" class="${flashcards[i].hide}">${flashcards[i].answer}</h4>
         <div class="button-container">
           <button class="edit-btn">Edit</button>
           <button class="delete-btn">Delete</button>
@@ -53,7 +53,17 @@ function displayFlashcards() {
 
         a.addEventListener("click", function (event) {
             event.preventDefault();
-       
+         let last = document.getElementById(i);
+        //  alert(i.value);
+        
+        if (last.style.display === 'none') {
+            //  this SHOWS the form
+            last.style.display = 'block';
+          } else {
+            //  this HIDES the form
+            last.style.display = 'none';
+          }
+      
         });
 
         edit.addEventListener("click", function (event) {
