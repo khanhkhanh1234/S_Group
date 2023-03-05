@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <div class="image_button">
+    <div class="image">
+      <img src="./img/chalk-writing-task-accomplished-concept-picture_csp9040997.webp">
+    </div>
+    <div class="addbtn">
+      <button id="button"> + New task</button>
+    </div>
+  </div>
+  <div class="flex-container">
+    <div class="card1">
+      <div class="title1">
+        <p class="p1">Todo</p>
+        <p class="count1">1</p>
+      </div>
+      <div class="flashcard-container">
+        
+      </div>
+    </div>
+    <div class="card2">
+      <div class="title2">
+        <p class="p2">Doing</p>
+        <p class="count2">1</p>
+      </div>
+    </div>
+    <div class="card3">
+      <div class="title3">
+        <p class="p3">Done</p>
+        <p class="count3">1</p>
+      </div>
+    </div>
+
+
+    <div class="edit">
+      <form class="form form-edit">
+        <!-- <img class="btn-close" src="./static/add.png" alt="close"> -->
+        <h2 class="form-head">
+          Edit todo
+        </h2>
+        <div class="form-body">
+          <input type="text" data-key="category" id="edit-category" placeholder="Category. Etc: Marketing..." />
+          <input type="text" data-key="title" id="edit-title" placeholder="Title" />
+          <textarea id="edit-content" data-key="content" placeholder="Content" rows="4"></textarea>
+          <div data-key="state" id="select" class="select">
+            <div>
+              <input type="radio" name="state" id="" value="0">
+              <label for="0">To do</label>
+            </div>
+            <div>
+              <input type="radio" name="state" id="" value="1">
+              <label for="1">Doing</label>
+            </div>
+            <div>
+              <input type="radio" name="state" id="" value="2">
+              <label for="2">Finished</label>
+            </div>
+          </div>
+          <input type="submit" class="submitedit" value="Submit">
+        </div>
+      </form>
+    </div>
+    <div class="childformadd">
+      <div class="formadd">
+
+        <form class="form form-add">
+          <img class="btn-close" src="./img/images.jpg" alt="close">
+          <h2 class="form-head">
+            Add new todo
+          </h2>
+          <div class="form-body">
+            <input name="category" class = "category" type="text" data-key="category" id="category" placeholder="Categor" />
+            <input name="title" class = "title" type="text" data-key="title" id="title" placeholder="Title" />
+            <textarea name="content" class="content" id="content" data-key="content" placeholder="Content" rows="4"></textarea>
+            <input type="submit"  id="submitadd" class = "submitadd" value="Submit">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+
+</body>
+
+</html>
+<script src="./scripts.js"></script>

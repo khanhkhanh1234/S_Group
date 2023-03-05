@@ -1,0 +1,226 @@
+.image_button {
+  position: relative;
+}
+.image img {
+    margin-left:5%;
+    width: 200px;
+    height: 100px;
+    display: block;
+}
+.addbtn button {
+  position: absolute; 
+  top: 50%; 
+  right: 10%;
+  transform: translate(100%, 100%); 
+  z-index: 1;
+}
+ .flex-container{
+  margin-left:5%;
+  margin-right: 5%;
+    /* width: 100%; */
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.flex-container > div {
+    background-color: #f1f1f1;
+    /* width: 100px;
+    margin: 10px; */
+    /* text-align: center; */
+    /* line-height: 55px;
+    font-size: 30px;
+    height: 20px; */
+    
+  }
+  .flex-container  .title1 {
+    display: flex;
+    /* justify-content: center; */
+    background-color: dodgerblue;
+    /* flex-grow: 1; */
+    /* margin: 5%; */
+    width: 200px;
+    height: 20px;
+    padding: 0;
+    position: relative;
+    align-items: center;
+  }
+  .flex-container  .title2  {
+    display: flex;
+    /* flex-grow: 1; */
+    background-color: yellow;
+    justify-content: center;
+    /* margin: 5%; */
+    width: 200px;
+    height: 20px;
+  }
+  .flex-container  .title3 {
+    display: flex;
+    /* flex-grow: 1; */
+    background-color: green;
+    justify-content: center;
+    /* margin: 5%; */
+    width: 200px;
+    height: 20px;
+    align-items: center;
+  }
+  .flex-container .title1 .p1 {
+    margin: 0;
+    /* Đặt giá trị z-index của p cao hơn z-index của div */
+  }
+.title1 .count1 {
+    padding-left: 150px;
+    margin: 0;
+    /* Đặt giá trị z-index của p cao hơn z-index của div */
+  }
+  .flex-container .title2 .p2 {
+    margin: 0;
+    /* Đặt giá trị z-index của p cao hơn z-index của div */
+  }
+  .flex-container .title3 .p3 {
+    margin: 0;
+   
+  }
+  .title2 .count2 {
+    padding-left: 150px;
+    margin: 0;
+    /* Đặt giá trị z-index của p cao hơn z-index của div */
+  }
+  .title3 .count3 {
+    padding-left: 150px;
+    margin: 0;
+    /* Đặt giá trị z-index của p cao hơn z-index của div */
+  }
+  .formadd {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: block;
+    /* opacity: 1; */
+    transition: .3s ease;
+    z-index: 3;
+  }
+  .childformadd {
+     opacity: 0;
+  }
+  .edit {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: block;
+    opacity: 0;
+    transition: .3s ease;
+    z-index: 0;
+}
+.form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0 20px 20px 20px;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 500px;
+  background-color: #fff;
+  display: block;
+}
+.form img {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 15px;
+  height: 15px;
+  /* transform: rotate(45deg); */
+  cursor: pointer;
+}
+.form-head {
+  text-align: center;
+}
+.form-body > input,
+.form-body textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.form-body .select,
+.form-body .select div {
+  display: flex;
+  flex: 1;
+}
+.form-body .select div {
+  justify-content: center;
+}
+.form-body .select {
+  justify-content: space-between;
+}
+.box {
+  padding: 16px 24px;
+  margin-bottom: 22px;
+  border-radius: 8px;
+  border: 1px solid grey;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+}
+.box-head {
+  display: flex;
+}
+.category {
+  font-size: 12px;
+  color: var(--blue3);
+  text-decoration: underline;
+}
+
+.box-title {
+  flex: 1;
+  overflow: hidden;
+}
+.box-title .category {
+  margin-bottom: 10px;
+}
+.box-action {
+  display: flex;
+  justify-content: center;
+}
+.box-divider {
+  height: 1px;
+  background-color: var(--text);
+  margin-right: 80px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.box-desc {
+  padding-right: 30px;
+  margin-bottom: 10px;
+}
+.box-time {
+  font-size: 10px
+}
+.box-time img {
+  width: 10px;
+  height: 10px;
+  margin-right: 3px;
+}
+.card1 {
+  display: flex;
+  flex-direction: column;
+}
+.box {
+  margin: 10px;
+}
+.edit-btn {
+  
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+
+}
+.delete-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+
+}
