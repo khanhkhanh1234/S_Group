@@ -1,15 +1,20 @@
 //hide form
+
 const click = document.querySelector(".addbtn");
 console.log(click);
-
+const formEdit = document.querySelector(".edit");
+console.log(formEdit);
 const formAdd = document.querySelector(".childformadd");
 console.log(formAdd);
 // formAdd.style.opacity = "1";
+formAdd.style.opacity = '0';
 click.addEventListener('click', () => {
   if (formAdd.style.opacity === "0") {
+    formAdd.style.display = "block";
     formAdd.style.opacity = '1';
     // formAdd.style.zIndex = '3';
   } else {
+    // formAdd.style.display = "none";
     formAdd.style.opacity = '0';
   }
 });
@@ -18,6 +23,7 @@ let todos = [];
 let categoryTextarea = document.getElementById("category");
 let titleTextarea = document.getElementById("title");
 let contentTextarea = document.getElementById("content");
+let editCategoryTextarea = document.getElementById("edit-category");
 let amen = document.querySelector(".submitadd");
 let a = document.querySelector(".category");
 let b = document.querySelector(".title");
@@ -47,6 +53,7 @@ amen.addEventListener("click", function (event) {
     // Save flashcards to localStorage
     localStorage.setItem("todos", JSON.stringify(todos));
     formAdd.style.opacity = '0';
+    formAdd.style.zIndex = '0';
     b.value = "";
     a.value = "";
     c.value = "";
@@ -96,6 +103,11 @@ function displayFlashcards() {
     // let a = flashcardBase.querySelector("a");
     let edit = todoBase.querySelector(".edit-btn");
     let deletebtn =todoBase.querySelector(".delete-btn");
+    let show = document.querySelector(".submitedit");
+    let radioTodo = document.getElementById("todo");
+    let radioDoing = document.getElementById("doing");
+    let radioDone = document.getElementById("done");
+    console.log(radioTodo);
     // let show = flashcardBase.querySelector("h4");
     // a.addEventListener("click", function (event) {
     //     event.preventDefault();
@@ -113,22 +125,54 @@ function displayFlashcards() {
     // });
      console.log(edit);
     edit.addEventListener("click", function (event) {
+      event.preventDefault();
+      formEdit.style.opacity = '0';
+      if (formEdit.style.opacity === "0") {
+        formEdit.style.opacity = '1';
+        formAdd.style.display = 'none';
+        }
+      //  else {
+      //   formEdit.style.opacity = '0';
+      // }
         // event.preventDefault();
-  
-      alert("hello");
+        let d = todos[i].category;
+        let e = todos[i].title;
+        let f = todos[i].content;
+        document.getElementById("edit-category").value = d;
+        document.getElementById("edit-title").value = e;
+        document.getElementById("edit-content").value = f;
+        console.log(d);
+        // console.log(document.querySelector(".edit-category"));
+       
         // categoryTextarea.value = todos[i].category;
         // titleTextarea.value = todos[i].title;
         // contentTextarea.value = todos[i].content;
-        // flashcards.splice(i, 1);
-        // displayFlashcards();
+        // todos.splice(i, 1);
+     
+        // localStorage.setItem("todos", JSON.stringify(todos));
+        displayFlashcards();
     });
-
-    // deletebtn.addEventListener("click", function (event) {
-    //     event.preventDefault();
-    //     flashcards.splice(i, 1);
-    //     localStorage.setItem("flashcards", JSON.stringify(flashcards));
-    //     displayFlashcards();
-    // });
+    show.addEventListener("click", function (event) {
+      event.preventDefault();
+      // alert("hello");
+      let g = document.getElementById("edit-category").value;
+      let h = document.getElementById("edit-title").value;
+      let j = document.getElementById("edit-content").value;
+      console.log(g);
+      todos[i].category= g;
+      todos[i].title = h;
+      todos[i].content= j;
+      localStorage.setItem("todos", JSON.stringify(todos));
+      formEdit.style.opacity = '0';
+      // formEdit.style.display = 'none';
+      displayFlashcards();
+    });
+    deletebtn.addEventListener("click", function (event) {
+        event.preventDefault();
+        todos.splice(i, 1);
+        localStorage.setItem("todos", JSON.stringify(todos));
+        displayFlashcards();
+    });
   }
 }
 

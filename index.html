@@ -45,6 +45,7 @@
 
     <div class="edit">
       <form class="form form-edit">
+        <img class="btn-close" src="./img/images.jpg" alt="close">
         <!-- <img class="btn-close" src="./static/add.png" alt="close"> -->
         <h2 class="form-head">
           Edit todo
@@ -55,19 +56,19 @@
           <textarea id="edit-content" data-key="content" placeholder="Content" rows="4"></textarea>
           <div data-key="state" id="select" class="select">
             <div>
-              <input type="radio" name="state" id="" value="0">
+              <input type="radio" name="state" id="todo" value="0">
               <label for="0">To do</label>
             </div>
             <div>
-              <input type="radio" name="state" id="" value="1">
+              <input type="radio" name="state" id="doing" value="1">
               <label for="1">Doing</label>
             </div>
             <div>
-              <input type="radio" name="state" id="" value="2">
+              <input type="radio" name="state" id="done" value="2">
               <label for="2">Finished</label>
             </div>
           </div>
-          <input type="submit" class="submitedit" value="Submit">
+          <input type="submit" id = "submit-edit" class="submitedit" value="Submit">
         </div>
       </form>
     </div>

@@ -49,8 +49,7 @@ function displayFlashcards() {
         let a = flashcardBase.querySelector("a");
         let edit = flashcardBase.querySelector(".edit-btn");
         let deletebtn = flashcardBase.querySelector(".delete-btn");
-        let show = flashcardBase.querySelector("h4");
-
+       
         a.addEventListener("click", function (event) {
             event.preventDefault();
          let last = document.getElementById(i);
